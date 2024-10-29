@@ -24,7 +24,19 @@ library(dogma20)
 
 ## create_random_seq
 
-## replace_T_with_U
+## make_RNA_seq
+
+make_RNA_seq is a function that transcribes a DNA sequence into an RNA sequence by replacing thymine (T) with uracil (U).
+
+**Usage:**
+
+```{r}
+RNA_seq <- make_RNA_seq(DNA_seq)
+```
+
+-   DNA_seq: A string representing a DNA sequence composed of nucleotide letters A, T, C and G
+
+The function returns a string representing the RNA sequence derived from the input DNA sequence, where thymine (`T`) is replaced by uracil (`U`).
 
 ## 
 
