@@ -10,3 +10,4 @@ library(testthat)
 library(dogma20)
 
 test_check("dogma20")
+
