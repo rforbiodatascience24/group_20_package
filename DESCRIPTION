@@ -1,0 +1,31 @@
+Package: dogma20
+Type: Package
+Title: The Central Dogma in Biology
+Version: 0.1.0
+Authors@R:
+  c(person(given = "Lea",
+           family = "Skytthe",
+           role = c("aut", "cre"), # There must be a "cre", but there can only be one
+           email = "s203531@dtu.dk"), 
+    person(given = "Trine",
+           family = "Soegaard",
+           role = "aut",
+           email = "s204655@dtu.dk"),
+    person(given = "Amy",
+           family = "Surry",
+           role = "aut",
+           email = "s201902@dtu.dk"),
+    person(given = "Olivier",
+           family = "Gaufres",
+           role = "aut",
+           email = "s243252@dtu.dk"),
+    person(given = "Antoine",
+           family = "Andreoletti",
+           role = "aut",
+           email = "s242830@dtu.dk"))
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
