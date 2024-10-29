@@ -1,0 +1,37 @@
+---
+title: "dogma20"
+output: rmarkdown::pdf_document
+vignette: >
+  %\VignetteIndexEntry{dogma20}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(dogma20)
+```
+
+# Description
+
+## Global description
+
+## create_random_seq
+
+## replace_T_with_U
+
+## 
+
+## convert_seq_to_prot
+
+## plotting_amino_acid_distribution
+
+# Use cases
+
+# Discussion
