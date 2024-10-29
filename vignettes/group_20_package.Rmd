@@ -24,14 +24,12 @@ library(dogma20)
 
 ## create_random_seq
 
-
 This function creates a random sequence of length seq_len
 
 ```{r}
 DNA_seq <- create_random_seq(12)
 DNA_seq
 ```
-
 
 ## make_RNA_seq
 
@@ -41,16 +39,30 @@ make_RNA_seq is a function that transcribes a DNA sequence into an RNA sequence 
 
 ```{r}
 RNA_seq <- make_RNA_seq(DNA_seq)
+RNA_seq
 ```
 
 -   DNA_seq: A string representing a DNA sequence composed of nucleotide letters A, T, C and G
 
 The function returns a string representing the RNA sequence derived from the input DNA sequence, where thymine (`T`) is replaced by uracil (`U`).
-## 
 
 ## convert_seq_to_prot
 
+The sequence takes a list of codons as an input and converts it into a protein sequence.
+
+```{r}
+prot_seq = convert_seq_to_prot(codons_sequence)
+prot_seq
+```
+
 ## plotting_amino_acid_distribution
+
+This function counts how much we have of each amino acids and plots the result.
+
+```{r}
+p = plotting_amino_acid_distribution(prot_seq)
+p
+```
 
 # Use cases
 
