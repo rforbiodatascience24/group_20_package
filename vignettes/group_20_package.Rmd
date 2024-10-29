@@ -26,7 +26,16 @@ library(dogma20)
 
 ## replace_T_with_U
 
-## 
+## split_codons
+
+This function takes as input:
+
+-   A string representing a nucleotide sequence - e.g. DNA or RNA.
+
+-   An integer specifying the start position in the sequence - default is 1,
+    meaning the function will start splitting from first position.
+
+The function splits the sequence into strings of three characters (nucleotides) starting from the start position. It returns a vector of the strings representing the codons.
 
 ## convert_seq_to_prot
 
