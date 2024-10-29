@@ -20,6 +20,8 @@ library(dogma20)
 
 # Description
 
+Our github link is: <https://github.com/rforbiodatascience24/group_20_package>
+
 ## Global description
 
 This package has all the function necessary to take a DNA sequence and analyse the distribution of the output amino acids.
