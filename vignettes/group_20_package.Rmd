@@ -22,6 +22,8 @@ library(dogma20)
 
 ## Global description
 
+This package has all the function necessary to take a DNA sequence and analyse the distribution of the output amino acids.
+
 ## create_random_seq
 
 This function creates a random sequence of length seq_len
@@ -45,6 +47,16 @@ RNA_seq
 -   DNA_seq: A string representing a DNA sequence composed of nucleotide letters A, T, C and G
 
 The function returns a string representing the RNA sequence derived from the input DNA sequence, where thymine (`T`) is replaced by uracil (`U`).
+
+## Split codons
+
+This function takes as input:
+
+-   A string representing a nucleotide sequence - e.g. DNA or RNA.
+
+-   An integer specifying the start position in the sequence - default is 1, meaning the function will start splitting from first position.
+
+The function splits the sequence into strings of three characters (nucleotides) starting from the start position. It returns a vector of the strings representing the codons.
 
 ## convert_seq_to_prot
 
