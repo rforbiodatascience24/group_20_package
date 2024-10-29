@@ -2,3 +2,12 @@
 
 export(convert_seq_to_prot)
 export(create_random_seq)
+export(plotting_amino_acid_distribution)
+importFrom(ggplot2,aes)
+importFrom(ggplot2,geom_col)
+importFrom(ggplot2,ggplot)
+importFrom(ggplot2,theme)
+importFrom(ggplot2,theme_bw)
+importFrom(stringr,boundary)
+importFrom(stringr,str_count)
+importFrom(stringr,str_split)
