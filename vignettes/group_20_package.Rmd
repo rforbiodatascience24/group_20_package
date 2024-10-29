@@ -26,20 +26,27 @@ This package has all the function necessary to take a DNA sequence and analyse t
 
 ## create_random_seq
 
-## replace_T_with_U
+This function creates a random sequence of length seq_len.
+
+```{r}
+DNA_seq <- create_random_seq(300)
+DNA_seq
+```
+
+## make_RNA_seq
+
+make_RNA_seq is a function that transcribes a DNA sequence into an RNA sequence by replacing thymine (T) with uracil (U).
+
+```{r}
+RNA_seq <- make_RNA_seq(DNA_seq)
+RNA_seq
+```
+
+-   DNA_seq: A string representing a DNA sequence composed of nucleotide letters A, T, C and G
+
+The function returns a string representing the RNA sequence derived from the input DNA sequence, where thymine (`T`) is replaced by uracil (`U`).
 
 ## split_codons
-
-This function takes as input:
-
--   A string representing a nucleotide sequence - e.g. DNA or RNA.
-
--   An integer specifying the start position in the sequence - default is 1,
-    meaning the function will start splitting from first position.
-
-The function splits the sequence into strings of three characters (nucleotides) starting from the start position. It returns a vector of the strings representing the codons.
-
-## Split codons
 
 This function takes as input:
 
@@ -49,10 +56,33 @@ This function takes as input:
 
 The function splits the sequence into strings of three characters (nucleotides) starting from the start position. It returns a vector of the strings representing the codons.
 
+```{r}
+codons_sequence = split_codons(RNA_seq)
+codons_sequence
+```
+
 ## convert_seq_to_prot
+
+The sequence takes a list of codons as an input and converts it into a protein sequence.
+
+```{r}
+prot_seq = convert_seq_to_prot(codons_sequence)
+prot_seq
+```
 
 ## plotting_amino_acid_distribution
 
+This function counts how much we have of each amino acids and plots the result.
+
+```{r}
+p = plotting_amino_acid_distribution(prot_seq)
+p
+```
+
 # Use cases
 
+This package can be used to convert a DNA sequence to protein sequence or to analyse a protein sequence to see the distribution of amino acids.
+
 # Discussion
+
+DependenciesUsers will need to install not only the packages our package depends on, but also all the dependencies of those packages. This list can grow very long if dependencies aren’t kept to a minimum.However, sometimes it cannot be avoided. E.g., to improve performance by using dependencies that are optimized for speed and efficiency (written in C++). Or for specialized functionality e.g., statistical modeling or visualization with ggplot.DifferenceUsing \@importFrom package function in a function’s documentation imports the function into your package’s namespace, so it can be used directly without prefixing.package::function() calls the function explicitly each time, clarifying its origin and avoiding namespace cluttering, though it can make code longer and less readable if the function is used often.

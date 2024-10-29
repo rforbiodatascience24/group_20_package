@@ -20,7 +20,7 @@ plotting_amino_acid_distribution <- function(amino_acid_sequence){
   counts[["Amino_acids"]] <- rownames(counts)
 
   p <- counts |>
-    ggplot2::ggplot(ggplot2::aes(x = "Amino_acids", y = "Counts", fill = "Amino_acids")) +
+    ggplot2::ggplot(ggplot2::aes(x = Amino_acids, y = Counts, fill = Amino_acids)) +
     ggplot2::geom_col() +
     ggplot2::theme_bw() +
     ggplot2::theme(legend.position = "none")
