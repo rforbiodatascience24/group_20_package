@@ -24,6 +24,13 @@ library(dogma20)
 
 ## create_random_seq
 
+This function creates a random sequence of length seq_len
+
+```{r}
+DNA_seq <- create_random_seq(12)
+DNA_seq
+```
+
 ## replace_T_with_U
 
 ## 
