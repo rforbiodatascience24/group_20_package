@@ -79,10 +79,24 @@ p = plotting_amino_acid_distribution(prot_seq)
 p
 ```
 
-# Use cases
+# Discussion
+
+## Use cases
 
 This package can be used to convert a DNA sequence to protein sequence or to analyse a protein sequence to see the distribution of amino acids.
 
-# Discussion
+## Further developments
 
-DependenciesUsers will need to install not only the packages our package depends on, but also all the dependencies of those packages. This list can grow very long if dependencies aren’t kept to a minimum.However, sometimes it cannot be avoided. E.g., to improve performance by using dependencies that are optimized for speed and efficiency (written in C++). Or for specialized functionality e.g., statistical modeling or visualization with ggplot.DifferenceUsing \@importFrom package function in a function’s documentation imports the function into your package’s namespace, so it can be used directly without prefixing.package::function() calls the function explicitly each time, clarifying its origin and avoiding namespace cluttering, though it can make code longer and less readable if the function is used often.
+In further developments, we could add more analysis functions to process the output of our conversion pipeline.
+
+## Dependencies
+
+Users will need to install not only the packages our package depends on, but also all the dependencies of those packages. This list can grow very long if dependencies aren’t kept to a minimum.
+
+However, sometimes it cannot be avoided. E.g., to improve performance by using dependencies that are optimized for speed and efficiency (written in C++). Or for specialized functionality e.g., statistical modeling or visualization with ggplot.
+
+## Difference
+
+Using \@importFrom package function in a function’s documentation imports the function into your package’s namespace, so it can be used directly without prefixing.
+
+package::function() calls the function explicitly each time, clarifying its origin and avoiding namespace cluttering, though it can make code longer and less readable if the function is used often.
